@@ -2,11 +2,36 @@ $mrh1: 40px;
 body {
     margin: 0 auto;
     position: relative;
+    background: #f8f9fa;
+}
+
+html {
+    font-size: 1rem;
 }
 
 * {
     margin: 0 auto;
     color: black;
+}
+
+.textBlock {
+    position: absolute;
+    z-index: 1;
+    top: 47%;
+    text-align: center;
+    opacity: 0.7;
+    & h1 {}
+    & h2 {
+        line-height: 0.8;
+    }
+}
+
+.review {
+    & img {
+        width: 140px;
+        height: 140px;
+        border-radius: 100px;
+    }
 }
 
 .illustration {
@@ -52,5 +77,30 @@ body {
         width: 40vmax;
         height: 25vmax;
         margin-bottom: $mrh1;
+    }
+}
+
+.contactInfo {
+    & .row {
+        & .col {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            & span {
+                font-weight: bold;
+            }
+            & img {
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+// Устройства Small (телефоны с горизонтальной ориентацией, 576 пикселей и выше)
+@media (max-width: 576px) {
+    .textBlock {
+        top: 29%;
+    }
+    .contactInfo {
+        display: none;
     }
 }
