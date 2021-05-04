@@ -1,0 +1,59 @@
+body {
+  margin: 0 auto;
+  position: relative;
+}
+
+* {
+  margin: 0 auto;
+  color: black;
+}
+
+.illustration {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.illustration h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.carousel-caption h5 {
+  color: white;
+}
+
+.carousel-caption p {
+  color: white;
+}
+
+.reviews {
+  margin-bottom: 40px;
+}
+
+.reviews h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.block_video {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.block_video h1 {
+  margin: 40px;
+  text-align: center;
+}
+
+.block_video iframe {
+  width: 40vmax;
+  height: 25vmax;
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=style.css.map */

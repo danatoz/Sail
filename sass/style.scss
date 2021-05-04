@@ -1,0 +1,56 @@
+$mrh1: 40px;
+body {
+    margin: 0 auto;
+    position: relative;
+}
+
+* {
+    margin: 0 auto;
+    color: black;
+}
+
+.illustration {
+    margin-top: $mrh1;
+    margin-bottom: $mrh1;
+    & h1 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+
+.carousel-caption {
+    & h5 {
+        color: white;
+    }
+    & p {
+        color: white;
+    }
+}
+
+.reviews {
+    margin-bottom: $mrh1;
+    & h1 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.block_video {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    & h1 {
+        margin: $mrh1;
+        text-align: center;
+    }
+    & iframe {
+        width: 40vmax;
+        height: 25vmax;
+        margin-bottom: $mrh1;
+    }
+}
