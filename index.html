@@ -5,23 +5,40 @@
     <!-- Обязательные метатеги -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Мета для индескирование сайта-->
+    <!--<base href="https://www.rsail.ru/">-->
+    <meta name="description" content="">
+    <meta name="keywords" content="аренда яхты саратов,
+    яхта с капитаном, 
+    аренда теплохода, 
+    аренда парусной яхты,
+    аренда яхты в саратове,
+    аренда парусной яхты в саратове, 
+    аренда парохода в саратове, 
+    прогулка по Волге">
+    <meta name="robots" content="index">
+    <meta name="Revisit" content="1">
+    <!--Требуется подтвердить права доступа владельцу сайта-->
+    <meta name="google-site-verification" content="">
+    <meta name="yandex-verification" content="">
 
     <!-- Bootstrap CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/ico/favicon.png" type="image/png">
     <title>RSail Аренда яхт - Главная</title>
 </head>
 
 <body>
     <div>
         <header>
-            <div class="contactInfo container bg-light">
-                <div class="row">
+            <div class="contactInfo">
+                <div class="row container">
                     <div class="col">
                         <p><img src="img/ico/clock.svg" alt=""><span>Время работы: </span>с 8:00 до 22:00</p>
                     </div>
                     <div class="col">
-                        <p><img src="img/ico/geo-alt-fill.svg" alt=""><span>Мы находимся: </span></p>
+                        <p><img src="img/ico/geo-alt-fill.svg" alt=""><span>Мы находимся: </span>г. Саратов Большая Затонская улица, 169В</p>
                     </div>
                     <div class="col">
                         <p>
@@ -33,8 +50,8 @@
             </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-example">
                 <div class="container">
-                    <a class="navbar-brand h1" href="#">Rsail</a>
-                    <button class="navbar-toggler" type="button">
+                    <a class="navbar-brand h1" href="index.html"><img src="img/ico/pngegg.png" alt="">Rsail</a>
+                    <button class="navbar-toggler callMe" type="button">
                       <a href="tel:89271468220"><img src="img/ico/telephone-inbound-fill.svg" alt=""></a>
                     </button>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,11 +59,12 @@
             </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Яхты</a>
-                            <a class="nav-link" href="#">Важное</a>
-                            <a class="nav-link" href="#">Полезное</a>
-                            <a class="nav-link" href="#">Фотосессии</a>
-                            <a class="nav-link" href="#">Отзывы</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                            <a class="nav-link" href="yachts.html">Яхты</a>
+                            <a class="nav-link" href="important.html">Важное</a>
+                            <a class="nav-link" href="useful.html">Полезное</a>
+                            <a class="nav-link" href="photoshoot.html">Фотосессии</a>
+                            <a class="nav-link" href="contact.html">Контакты</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +74,7 @@
             <div id="carouselExampleCaptions" class="carousel slide container" data-bs-ride="carousel">
                 <div class="textBlock container">
                     <h1>RSail</h1>
-                    <h2>Аренда яхт в Саратове</h2>
+                    <h2>Аренда парусных яхт в Саратове</h2>
                 </div>
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -195,7 +213,7 @@
                 <iframe src="https://www.youtube.com/embed/P-rpjzOr5Ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </content>
-        <footer class="footer mt-auto py-3 bg-dark">
+        <footer class="footer mt-auto py-3 bg-dark bottom-0">
             <div class="container">
                 <div class="row">
                     <div class="col">

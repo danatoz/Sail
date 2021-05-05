@@ -25,6 +25,19 @@ html {
   line-height: 0.8;
 }
 
+nav div a img {
+  margin: 10px;
+  width: 30px;
+}
+
+nav div button a img {
+  width: 30px;
+}
+
+.callMe {
+  margin-right: 30px;
+}
+
 .review img {
   width: 140px;
   height: 140px;
@@ -80,6 +93,14 @@ html {
   margin-bottom: 40px;
 }
 
+.contactInfo {
+  background: linear-gradient(to top, #9ebddc, #97e2e1);
+}
+
+.contactInfo .row {
+  margin: 0 auto;
+}
+
 .contactInfo .row .col {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -90,7 +111,17 @@ html {
 }
 
 .contactInfo .row .col img {
-  padding-right: 20px;
+  margin-right: 20px;
+  width: 20px;
+}
+
+content div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+content div .card img {
+  padding-top: 12px;
 }
 
 @media (max-width: 576px) {

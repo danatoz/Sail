@@ -20,10 +20,31 @@ html {
     top: 47%;
     text-align: center;
     opacity: 0.7;
-    & h1 {}
     & h2 {
         line-height: 0.8;
     }
+}
+
+nav {
+    & div {
+        & a {
+            & img {
+                margin: 10px;
+                width: 30px;
+            }
+        }
+        & button {
+            & a {
+                & img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+.callMe {
+    margin-right: 30px;
 }
 
 .review {
@@ -81,7 +102,9 @@ html {
 }
 
 .contactInfo {
+    background: linear-gradient(to top, #9ebddc, #97e2e1);
     & .row {
+        margin: 0 auto;
         & .col {
             padding-top: 20px;
             padding-bottom: 20px;
@@ -89,7 +112,20 @@ html {
                 font-weight: bold;
             }
             & img {
-                padding-right: 20px;
+                margin-right: 20px;
+                width: 20px;
+            }
+        }
+    }
+}
+
+content {
+    & div {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        & .card {
+            & img {
+                padding-top: 12px;
             }
         }
     }
