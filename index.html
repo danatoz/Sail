@@ -17,6 +17,8 @@
     аренда парохода в саратове, 
     прогулка по Волге">
     <meta name="robots" content="index">
+    <meta name="yandex" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
     <meta name="Revisit" content="1">
     <!--Требуется подтвердить права доступа владельцу сайта-->
     <meta name="google-site-verification" content="">
@@ -26,18 +28,18 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/ico/favicon.png" type="image/png">
-    <title>RSail Аренда яхт - Главная</title>
+    <title>Арендовать яхту в Саратове - RSail</title>
 </head>
 
 <body>
-    <div>
+    <div class="wrapper">
         <header>
             <div class="contactInfo">
                 <div class="row container">
                     <div class="col">
                         <p><img src="img/ico/clock.svg" alt=""><span>Время работы: </span>с 8:00 до 22:00</p>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <p><img src="img/ico/geo-alt-fill.svg" alt=""><span>Мы находимся: </span>г. Саратов Большая Затонская улица, 169В</p>
                     </div>
                     <div class="col">
@@ -73,43 +75,38 @@
         <content>
             <div id="carouselExampleCaptions" class="carousel slide container" data-bs-ride="carousel">
                 <div class="textBlock container">
-                    <h1>RSail</h1>
-                    <h2>Аренда парусных яхт в Саратове</h2>
-                </div>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <h1>Аренда парусной яхты в Саратове</h1>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="img/slider_1.jpg" class="d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Метка первого слайда</h5>
+                            <h5>Романтические прогулки для влюбленных</h5>
                             <p>
-                                Некоторый репрезентативный заполнитель для первого слайда.
+                                Свадьба под алыми парусами, с застольем на острове.
                             </p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/slider_2.jpg" class="d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Метка второго слайда</h5>
+                            <h5>Путешествие по Волге</h5>
                             <p>
-                                Некоторый репрезентативный заполнитель для второго слайда.
+                                Катание на яхтах по живописным волжским протокам.
                             </p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/slider_3.jpg" class="d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Метка третьего слайда</h5>
+                            <h5>Фотосессии на яхте</h5>
                             <p>
-                                Некоторый репрезентативный заполнитель для третьего слайда.
+                                Где, как не на яхте, делать красивые фотографии?!
                             </p>
                         </div>
                     </div>
                 </div>
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Предыдущий</span>
@@ -121,58 +118,112 @@
             </div>
 
             <div class="container illustration">
-                <h1>Наш флот</h1>
-                <hr />
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col">
-                        <div class="card">
-                            <img src="img/illustration.jpg" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Название карточки</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                                </p>
-                            </div>
+                <h2>Наш флот</h2>
+                <div class="container marketing">
+                    <!-- START THE FEATURETTES -->
+                    <hr class="featurette-divider">
+                    <div class="row featurette">
+                        <div class="col-md-7">
+                            <h3 class="featurette-heading">First featurette heading.
+                                <span class="text-muted">It’ll blow your mind.</span>
+                            </h3>
+                            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                        </div>
+                        <div class="col-md-5">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#eee"></rect>
+                                <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+                            </svg>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="img/illustration.jpg" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Название карточки</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                                </p>
-                            </div>
+                    <hr class="featurette-divider">
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2">
+                            <h3 class="featurette-heading">Oh yeah, it’s that good.
+                                <span class="text-muted">See for yourself.</span>
+                            </h3>
+                            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"></rect>
+                            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+                        </svg>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="img/illustration.jpg" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Название карточки</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a natural lead-in to additional content.
-                                </p>
-                            </div>
+                    <hr class="featurette-divider">
+                    <div class="row featurette">
+                        <div class="col-md-7">
+                            <h3 class="featurette-heading">And lastly, this one.
+                                <span class="text-muted">Checkmate.</span>
+                            </h3>
+                            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                        </div>
+                        <div class="col-md-5">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#eee"></rect>
+                                <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+                            </svg>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="img/illustration.jpg" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Название карточки</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <hr class="featurette-divider">
+                    <!-- /END THE FEATURETTES -->
                 </div>
+                <!--
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/yachts/Carat_1.jpg" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Парусная яхта - Карат</h5>
+                                    <p class="card-text">
+                                        This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/yachts/Gorgon_1.jpg" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Парусная яхта - Горгона</h5>
+                                    <p class="card-text">
+                                        This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/yachts/Argo_1.jpg" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Парусная яхта - Арго</h5>
+                                    <p class="card-text">
+                                        This is a longer card with supporting text below as a natural lead-in to additional content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/yachts/Bravo_1.jpg" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Парусная яхта - Браво</h5>
+                                    <p class="card-text">
+                                        This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                -->
             </div>
 
             <div class="container marketing reviews">
-                <h1>Отзывы клиентов</h1>
+                <h2>Отзывы клиентов</h2>
                 <hr />
                 <!-- Three columns of text below the carousel -->
                 <div class="row">
@@ -208,7 +259,7 @@
                 <!-- /.row -->
             </div>
             <div class="container block_video">
-                <h1>Видеоролик</h1>
+                <h2>Видеоролик</h2>
                 <hr />
                 <iframe src="https://www.youtube.com/embed/P-rpjzOr5Ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
