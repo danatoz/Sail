@@ -1,8 +1,8 @@
 $mrh1: 40px;
 body {
     margin: 0 auto;
-    position: relative;
-    background: #f8f9fa;
+    background: #fff;
+    margin-bottom: 60px;
 }
 
 .wrapper {
@@ -11,6 +11,8 @@ body {
 
 html {
     font-size: 1rem;
+    position: relative;
+    min-height: 100%;
 }
 
 * {
@@ -29,12 +31,15 @@ html {
     }
 }
 
+.contactQuestion {
+    padding-bottom: 10px;
+}
+
 nav {
-    background: linear-gradient(to top, #ffdfd7, #e0ffff);
+    background: linear-gradient(to top, #bbe0f1, #e0ffff);
     & div {
         & a {
             & img {
-                margin: 10px;
                 width: 30px;
             }
         }
@@ -49,7 +54,13 @@ nav {
 }
 
 .callMe {
-    margin-right: 30px;
+    margin-right: 20px;
+    & a {
+        & img {
+            padding: 2px;
+            width: 30px;
+        }
+    }
 }
 
 .review {
@@ -62,6 +73,7 @@ nav {
 
 .illustration {
     margin-bottom: $mrh1;
+    margin-top: $mrh1;
     & h2 {
         margin-bottom: 50px;
         text-align: center;
@@ -88,6 +100,7 @@ nav {
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
+    color: white;
 }
 
 .block_video {
@@ -106,39 +119,43 @@ nav {
 }
 
 .contactInfo {
-    & .row {
-        margin: 0 auto;
-        & .col-6 {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            & span {
-                font-weight: bold;
-            }
-            & img {
-                margin-right: 20px;
-                width: 20px;
-            }
-        }
-        & .col {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            & span {
-                font-weight: bold;
-            }
-            & img {
-                margin-right: 20px;
-                width: 20px;
-            }
+    & a {
+        & img {
+            width: 30px;
+            margin-right: 20px;
         }
     }
 }
 
-content {
-    & div {
-        padding-bottom: 20px;
-        & .card {
+.contactBlock {
+    padding-top: $mrh1;
+    padding-bottom: $mrh1;
+    & .row {
+        & .col {
+            & span {
+                font-weight: bold;
+            }
+            & h2 {
+                margin-bottom: 50px;
+            }
             & img {
-                padding-top: 12px;
+                margin-right: 20px;
+                width: 20px;
+            }
+            & :nth-child(4) {
+                margin-bottom: 100px;
+            }
+            & :nth-child(5) {
+                & p {
+                    & a {
+                        & :hover {
+                            opacity: 0.5;
+                        }
+                        & img {
+                            width: 40px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -150,11 +167,25 @@ content {
     }
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 // Устройства Small (телефоны с горизонтальной ориентацией, 576 пикселей и выше)
 @media (max-width: 576px) {
     .textBlock {
         top: 29%;
     }
+    .contactInfo {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (max-width: 991px) {
     .contactInfo {
         display: none;
     }

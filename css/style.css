@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
-  position: relative;
-  background: #f8f9fa;
+  background: #fff;
+  margin-bottom: 60px;
 }
 
 .wrapper {
@@ -10,6 +10,8 @@ body {
 
 html {
   font-size: 1rem;
+  position: relative;
+  min-height: 100%;
 }
 
 * {
@@ -29,12 +31,15 @@ html {
   line-height: 0.8;
 }
 
+.contactQuestion {
+  padding-bottom: 10px;
+}
+
 nav {
-  background: linear-gradient(to top, #ffdfd7, #e0ffff);
+  background: linear-gradient(to top, #bbe0f1, #e0ffff);
 }
 
 nav div a img {
-  margin: 10px;
   width: 30px;
 }
 
@@ -43,7 +48,12 @@ nav div button a img {
 }
 
 .callMe {
-  margin-right: 30px;
+  margin-right: 20px;
+}
+
+.callMe a img {
+  padding: 2px;
+  width: 30px;
 }
 
 .review img {
@@ -54,6 +64,7 @@ nav div button a img {
 
 .illustration {
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .illustration h2 {
@@ -81,6 +92,7 @@ nav div button a img {
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
+  color: white;
 }
 
 .block_video {
@@ -100,54 +112,61 @@ nav div button a img {
   margin-bottom: 40px;
 }
 
-.contactInfo .row {
-  margin: 0 auto;
+.contactInfo a img {
+  width: 30px;
+  margin-right: 20px;
 }
 
-.contactInfo .row .col-6 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.contactBlock {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.contactInfo .row .col-6 span {
+.contactBlock .row .col span {
   font-weight: bold;
 }
 
-.contactInfo .row .col-6 img {
+.contactBlock .row .col h2 {
+  margin-bottom: 50px;
+}
+
+.contactBlock .row .col img {
   margin-right: 20px;
   width: 20px;
 }
 
-.contactInfo .row .col {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.contactBlock .row .col :nth-child(4) {
+  margin-bottom: 100px;
 }
 
-.contactInfo .row .col span {
-  font-weight: bold;
+.contactBlock .row .col :nth-child(5) p a :hover {
+  opacity: 0.5;
 }
 
-.contactInfo .row .col img {
-  margin-right: 20px;
-  width: 20px;
-}
-
-content div {
-  padding-bottom: 20px;
-}
-
-content div .card img {
-  padding-top: 12px;
+.contactBlock .row .col :nth-child(5) p a img {
+  width: 40px;
 }
 
 .col-md-7 h3 {
   margin-top: 7rem;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 @media (max-width: 576px) {
   .textBlock {
     top: 29%;
   }
+  .contactInfo {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
   .contactInfo {
     display: none;
   }
