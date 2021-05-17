@@ -3,6 +3,7 @@ body {
     margin: 0 auto;
     background: #fff;
     margin-bottom: 60px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper {
@@ -20,13 +21,19 @@ html {
     color: black;
 }
 
+header {
+    font-family: 'Lobster', cursive;
+}
+
 .textBlock {
     position: absolute;
     z-index: 1;
     top: 47%;
     text-align: center;
     opacity: 0.7;
-    & h2 {
+    font-family: 'Lobster', cursive;
+    & h1 {
+        color: white;
         line-height: 0.8;
     }
 }
@@ -168,6 +175,21 @@ nav {
     }
 }
 
+.album {
+    & .container {
+        & .row {
+            &:nth-child(1) {
+                padding: 0 0 40px 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.notCarriage {
+    padding: 40px 0 40px 0;
+}
+
 .col-md-7 {
     & h3 {
         margin-top: 7rem;
@@ -178,6 +200,33 @@ nav {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+.headerImportantPage {
+    padding: 40px 0 40px 0;
+    & h1 {
+        text-align: center;
+        font-family: 'Lobster', cursive;
+    }
+}
+
+.contentImportantPage {
+    & p {
+        & :nth-child(1) {}
+    }
+    & span {
+        font-weight: bold;
+    }
+}
+
+.usefulPageBlock {
+    & .usefulPageHeader {
+        padding: 0 0 40px 0;
+        & h1 {
+            font-family: 'Lobster', cursive;
+        }
+    }
+    padding: 40px 0 40px 0;
 }
 
 // Устройства Small (телефоны с горизонтальной ориентацией, 576 пикселей и выше)

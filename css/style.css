@@ -2,6 +2,7 @@ body {
   margin: 0 auto;
   background: #fff;
   margin-bottom: 60px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper {
@@ -19,15 +20,21 @@ html {
   color: black;
 }
 
+header {
+  font-family: 'Lobster', cursive;
+}
+
 .textBlock {
   position: absolute;
   z-index: 1;
   top: 47%;
   text-align: center;
   opacity: 0.7;
+  font-family: 'Lobster', cursive;
 }
 
-.textBlock h2 {
+.textBlock h1 {
+  color: white;
   line-height: 0.8;
 }
 
@@ -152,6 +159,15 @@ nav div button a img {
   width: 40px;
 }
 
+.album .container .row:nth-child(1) {
+  padding: 0 0 40px 0;
+  text-align: center;
+}
+
+.notCarriage {
+  padding: 40px 0 40px 0;
+}
+
 .col-md-7 h3 {
   margin-top: 7rem;
 }
@@ -160,6 +176,31 @@ nav div button a img {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.headerImportantPage {
+  padding: 40px 0 40px 0;
+}
+
+.headerImportantPage h1 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+}
+
+.contentImportantPage span {
+  font-weight: bold;
+}
+
+.usefulPageBlock {
+  padding: 40px 0 40px 0;
+}
+
+.usefulPageBlock .usefulPageHeader {
+  padding: 0 0 40px 0;
+}
+
+.usefulPageBlock .usefulPageHeader h1 {
+  font-family: 'Lobster', cursive;
 }
 
 @media (max-width: 576px) {
