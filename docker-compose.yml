@@ -1,22 +1,37 @@
 version: '3.0'
 
 services:
-
-  phpApache:
-    image: php:7.2-apache
+  adminer:
+    image: adminer
+    restart: always
+    depends_on:
+      - mysql
     ports:
-      - "8080:80"
-    volumes:
-      - .:/var/www/html/
+      - 8081:8080
     networks:
       - backend
 
   mysql:
-    image: mysql:5.7
+    image: mysql
     volumes:
-      - .:/var/lib/mysql
+      - ./Data:/var/lib/mysql
     environment:
+      MYSQL_USER: root
       MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: rsail
+    restart: always
+    networks:
+      - backend
+
+  webapp:
+    build: .
+    image: rsailapp:latest
+    ports:
+      - 8080:80
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mysql
     networks:
       - backend
 
@@ -25,3 +40,4 @@ networks:
     external:
       name: proxy_proxy
   backend:
+      
