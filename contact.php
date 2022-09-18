@@ -31,32 +31,9 @@
 
 <body>
     <div>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-example">
-                <div class="container">
-                    <a class="navbar-brand h1" href="index.html"><img src="img/ico/pngegg.png" alt="">Rsail</a>
-                    <button class="navbar-toggler callMe" type="button">
-                        <a href="tel:89271468220"><img src="img/ico/telephone-inbound-fill.svg" alt=""></a>
-                    </button>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
-                            <a class="nav-link" href="yachts.html">Яхты</a>
-                            <a class="nav-link" href="important.html">Важное</a>
-                            <a class="nav-link" href="useful.html">Полезное</a>
-                            <a class="nav-link" href="photoshoot.html">Фотосессии</a>
-                            <a class="nav-link" href="contact.html">Контакты</a>
-                        </div>
-                    </div>
-                    <div class="contactInfo">
-                        <a href="tel:89271468220"><img src="img/ico/telephone-inbound-fill.svg" alt="">8 927 146-82-20</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <?php
+        require "_Header.php"
+    ?>
         <content>
 
             <div class="container contactBlock">
@@ -93,20 +70,9 @@
                 </div>
             </div>
         </content>
-        <footer class="footer mt-auto py-3 bg-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <span class="text-muted">Разработано: <a href="mailto:gulyaev.ed.v@gmail.com">gulyaev.ed.v@gmail.com</a></span>
-                    </div>
-                    <div class="col">
-                        <span class="text-muted">&copy; Авторское право 2021
-                <a href="https://www.rsail.ru">RSail</a></span
-              >
-            </div>
-          </div>
-        </div>
-        </footer>
+        <?php
+            require "_Footer.php"
+        ?>
     </div>
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>

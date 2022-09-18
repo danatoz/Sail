@@ -1,0 +1,27 @@
+version: '3.0'
+
+services:
+
+  phpApache:
+    image: php:7.2-apache
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html/
+    networks:
+      - backend
+
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - .:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - backend
+
+networks:
+  frontend:
+    external:
+      name: proxy_proxy
+  backend:
